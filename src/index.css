@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Snow-Blue";
+  src: url("./assets/SNOW\ BLUE.otf");
+}
+
+@font-face {
+  font-family: "Designer";
+  src: url("./assets/Designer.otf");
+}
+
+@font-face {
+  font-family: "Apple";
+  src: url("./assets/AppleGaramond.ttf");
+}
+
+@theme {
+  --color-snow-white: #F7F9FB;
+  --color-penguin-black: #0D0D0D;
+  --color-beak-orange: #FFA500;
+  --color-flipper-gray: #4F4F4F;
+  --color-ice-blue: #A9D6E5;
+  --color-frost-mint: #D2F1F9;
+  --color-glacier-teal: #2D9CDB;
+  --font-snow: "Snow-Blue", "san-serif";
+  --font-f1: "Designer", "san-serif";
+  --font-f2: "Apple", "san-serif";
+
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.project-icon {
+  @apply text-snow-white text-[10rem] flex justify-center items-center;
+}
+
+.project {
+  @apply ring-1 rounded-md ring-penguin-black md:h-50 h-40 flex flex-col justify-center items-center text-2xl underline underline-offset-1 text-shadow-2xs text-shadow-flipper-gray text-beak-orange;
+}
+
+.btn{
+  @apply ring-2 px-5 py-1 font-bold text-center bg-beak-orange ring-beak-orange/50 shadow-md active:shadow-md hover:scale-110 active:scale-100 rounded-md text-snow-white text-xl active:shadow-snow-white shadow-flipper-gray;
+}
+
+.inp{
+  @apply ring-2 px-15 py-2 w-[80%]  focus:shadow-md focus:shadow-ice-blue ring-penguin-black rounded-md text-center;
+}
+
+.orange-ring{
+  @apply shadow-lg shadow-beak-orange ring-2 rounded-md ring-beak-orange;
+}
+
+.menu-card{
+  @apply border-2 p-2 rounded-2xl;
+}
+.calc-btn{
+  @apply py-8  bg-ice-blue relative  border-1 border-penguin-black hover:scale-101 active:bg-beak-orange/90 shadow-snow-white shadow-md active:shadow-flipper-gray active:scale-95 hover:cursor-pointer;
+}
+.test{
+  @apply border-1 border-red-600;
+}
+
+.calc-btn img{
+  position: absolute;
+  width: 55%;
+  object-fit: cover;
+}
+.bl{
+  bottom: 0;
+  left: 0;
+
+}
+
+.cc{
+  bottom:  0;
+  right:  0;
+  /* transform: translateX(50%); */
+  /* transform: translate(50%); */
+}
+
+.btm{
+  bottom: 0;
+}
+
+.tr{
+  top: 0;
+  right: 0;
+}
+
