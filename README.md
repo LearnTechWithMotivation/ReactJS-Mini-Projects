@@ -1,10 +1,3 @@
----
-
-````markdown
-# 🚀 React Learning
-
-A modern React web application built using Vite for fast development and performance.  
-This repository showcases a collection of React mini projects developed while learning React.
 
 ---
 
@@ -82,10 +75,4 @@ Made with 🤍 by [Sharief](https://github.com/Mahammed-Sharief-Shaik)
 
 ---
 
-```
 
-Let me know if you:
-- Want to add **project screenshots or GIFs**.
-- Use `gh-pages` for deployment — I’ll help you write deploy instructions.
-- Want badges (e.g., license, version, Netlify status).
-```
